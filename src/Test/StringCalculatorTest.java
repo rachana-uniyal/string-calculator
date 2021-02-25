@@ -1,5 +1,6 @@
-package Code;
+package Test;
 
+import Code.StringCalculator;
 import org.junit.jupiter.api.AssertionsKt;
 import org.junit.jupiter.api.Test;
 
@@ -14,8 +15,13 @@ class StringCalculatorTest {
     }
 
     @Test
-    void InputIsOneDigit(){
+    void InputIsLengthOne(){
         assertTrue(cal_test.add("1")==1);
+    }
+
+    @Test
+    void InputIsLengthTwo(){
+        assertTrue(cal_test.add("1,2")==3);
     }
 
 }
