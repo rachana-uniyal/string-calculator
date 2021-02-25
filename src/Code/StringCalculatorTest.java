@@ -13,6 +13,9 @@ class StringCalculatorTest {
         assertTrue(cal_test.add("")==0);
     }
 
-
+    @Test
+    void InputIsOneDigit(){
+        assertTrue(cal_test.add("1")==1);
+    }
 
 }
