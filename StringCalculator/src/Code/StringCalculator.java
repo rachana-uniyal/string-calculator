@@ -12,7 +12,8 @@ public class StringCalculator {
             if(s.length()==1)
                 result = Integer.parseInt(s);
             else{
-                String[] text = s.split(",");
+                String s1 = s.replaceAll("\n",",");
+                String[] text = s1.split(",");
                 Integer x=0;
                 for (int i = 0; i<text.length ; i++){
                      x = Integer.valueOf(text[i]);

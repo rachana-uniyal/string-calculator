@@ -28,4 +28,8 @@ class StringCalculatorTest {
     void unknownAmountInput() {
         assertTrue(cal_test.add("1,2,3,4,5")==15);}
 
+    @Test
+    void newLineBetweenNumber() {
+        assertTrue(cal_test.add("1\n2,3\n4,5")==15);}
+        
 }
