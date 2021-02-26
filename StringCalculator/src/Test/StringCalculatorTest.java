@@ -10,18 +10,22 @@ class StringCalculatorTest {
 
     StringCalculator cal_test = new StringCalculator();
     @Test
-    void InputIsEmptyString(){
+    void inputIsEmptyString(){
         assertTrue(cal_test.add("")==0);
     }
 
     @Test
-    void InputIsLengthOne(){
+    void inputIsLengthOne(){
         assertTrue(cal_test.add("1")==1);
     }
 
     @Test
-    void InputIsLengthTwo(){
+    void inputIsLengthTwo(){
         assertTrue(cal_test.add("1,2")==3);
     }
+
+    @Test
+    void unknownAmountInput() {
+        assertTrue(cal_test.add("1,2,3,4,5")==15);}
 
 }

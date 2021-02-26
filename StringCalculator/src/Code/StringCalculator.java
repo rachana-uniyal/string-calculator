@@ -4,7 +4,6 @@ public class StringCalculator {
 
 
     public int add(String s) {
-        s ="1,2";
         int result=0;
         if(s.isEmpty()) {
             result = 0;
